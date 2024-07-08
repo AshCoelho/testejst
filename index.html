@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<script src="script.js"></script>-->
+    <!--<script src="DOM.js" defer></script>-->
+    <script src="exercicio.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+
+        /* #lampada, #lampadaAcesa {
+            width: 200px;
+            height: auto;
+        }
+        button {
+            margin: 1rem;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: yellow;
+        }
+*/
+        #container {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        #btn-olho {
+            border: none;
+            background-color: white;
+        }
+
+        #centralize {
+            
+            border: 1px solid;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body id="fundo">
+    <!--<p id="olá"></p>
+
+    <p class="centralizar">Texto parágrafo</p>
+    <h1 class="centralizar">Titulo </h1>
+
+    <button id="btn_aviso">fhweifhei</button>-->
+    <!--<h1></h1>-->
+    
+    
+    <!-- <div id="container">
+        <h1 id="h1">Testar lâmpada</h1>
+        <img id="lampada" src="lampada.jpg" alt=""> 
+        
+        <br>
+        <button onclick="ligar()">Ligar</button>
+        <button onclick="desligar()">Desligar</button>
+    </div> -->
+    
+
+    
+    <!--<div id="container">
+        <form action="">
+            <label for="">Senha: <input type="password" class="senha" id="senha"></label>
+            <img src="olho aberto.png" alt="" id="olho">
+            
+        </form>
+    </div> -->
+
+    <div  id="centralize">
+        <label for="">Senha:  </label>
+        <input type="password" class="senha" >
+        <button class="btn-olho"><img src="olho.png" alt="" class="icon-olho"></button>
+        <br>
+        <label for="">Repita a Senha: </label>
+        <input type="password" class="senha" >
+        <button class="btn-olho"><img src="olho.png" alt="" class="icon-olho"></button>
+    </div>
+</body>
+</html>
