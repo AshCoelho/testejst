@@ -9,13 +9,9 @@ document.querySelector('body').appendChild(novo_nome)
 // 02
 
 function ligar() {
-<<<<<<< HEAD
     document.getElementById('lampada').src = 'acesa.png'
     document.getElementById('fundo').style.background = "white"
     document.getElementById('h1').style.color = "black"
-=======
-    document.getElementById('lampada').src = 'lampada_acesa.jpg'
->>>>>>> 752bdbbcffac250ef002af41b4e91e7a12c31905
 }
 
 function desligar() {
@@ -69,12 +65,14 @@ document.getElementById('olho').addEventListener('mousedown', function() {
 // OU
 
 const ipt_senha = document.querySelector('.senha')
-const molho = document.querySelector('.btn-olho')
+const olho = document.querySelector('.btn-olho')
 const icn_olho = document.querySelector('.icon-olho')
+const ipt_confirma_senha =document.querySelector('.confirma-senha')
+const mensagem_erro = document.querySelector('.mensagem-erro')
 
 let visivel = false
 
-molho.addEventListener('click', () => {
+olho.addEventListener('click', () => {
     if (visivel) {
         ipt_senha.type = 'password'
         icn_olho.src = "olhofec.png"
@@ -83,5 +81,14 @@ molho.addEventListener('click', () => {
         ipt_senha.type = 'text'
         icn_olho.src = 'olho.png'
         visivel = true
+    }
+})
+
+ipt_confirma_senha.addEventListener('input', () => {
+    if (ipt_confirma_senha.value != ipt_senha.value) {
+        mensagem_erro.textContent = "As senhas não batem"
+        mensagem_erro.style.color = "red";
+    } else {
+        mensagem_erro.textContent = ""
     }
 })

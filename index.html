@@ -40,7 +40,7 @@
         }
 
         #centralize {
-            
+            padding: 10% 1%;
             border: 1px solid;
             position: absolute;
             top: 50%;
@@ -80,13 +80,22 @@
     </div> -->
 
     <div  id="centralize">
-        <label for="">Senha:  </label>
+        
+        <label for="">Senha: </label> <br>
         <input type="password" class="senha" >
-        <button class="btn-olho"><img src="olho.png" alt="" class="icon-olho"></button>
+        <button class="btn-olho">
+            <img src="olhofec.png" alt="" class="icon-olho">
+        </button>
         <br>
-        <label for="">Repita a Senha: </label>
+
+        <label for="">Confirme a Senha: </label> <br>
+
         <input type="password" class="senha" >
-        <button class="btn-olho"><img src="olho.png" alt="" class="icon-olho"></button>
+        <button class="btn-olho">
+            <img src="olhofec.png" alt="" class="icon-olho" class="confirma-senha" >
+        </button>
+        <span class="mensagem-erro"></span>
+    
     </div>
 </body>
 </html>
